@@ -78,8 +78,10 @@ fieldset {
     display: flex;
     position: relative;
     flex-direction: column;
+    width: 399px;
     height: 289px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .content__video-card {
@@ -114,13 +116,13 @@ fieldset {
 }
 
 .content__video-card-description {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .content__card-link {
     color: #fff;
     font-family: "Oswald", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 100%;
     text-transform: uppercase;
@@ -132,7 +134,7 @@ fieldset {
 }
 
 .content__list-item:hover {
-    text-underline-offset: 9px;
+    text-underline-offset: px;
     text-decoration: underline;
 }
 
@@ -335,7 +337,7 @@ input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox::before {
 
 .more-button {
     display: flex;
-    width: 510px;
+    width: 389px;
     height: 34px;
     justify-content: center;
     align-items: center;
