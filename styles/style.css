@@ -9,6 +9,10 @@ html {
 }
 
 .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
     inline-size: 1200px;
     block-size: 100%;
     margin: auto;
@@ -134,7 +138,7 @@ fieldset {
 }
 
 .content__list-item:hover {
-    text-underline-offset: px;
+    text-underline-offset: 5px;
     text-decoration: underline;
 }
 
