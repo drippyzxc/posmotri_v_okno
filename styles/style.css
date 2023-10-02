@@ -74,8 +74,8 @@ fieldset {
 
 .content {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
+    margin: auto;
     width: 1140px;
 }
 
@@ -83,6 +83,7 @@ fieldset {
     display: flex;
     position: relative;
     flex-direction: column;
+    width: 409px;
     height: 310px;
     margin-top: 14px;
     overflow-y: auto;
@@ -119,7 +120,7 @@ fieldset {
     font-size: 18px;
     font-weight: 400;
     line-height: 16.2px;
-    margin-top: 10px;
+    margin-top: 6px;
     text-transform: capitalize;
 }
 
@@ -157,7 +158,7 @@ fieldset {
 }
 
 .content__video-card-title {
-    margin-top: 11px;
+    margin-top: 6px;
     line-height: 100%;
 }
 
@@ -169,7 +170,6 @@ fieldset {
     line-height: 94%;
     text-transform: uppercase;
 }
-
 
 .result__video-container {
     display: flex;
@@ -205,7 +205,12 @@ fieldset {
     transition: 0.5s;
 }
 
+.search-form__textfield:hover::placeholder {
+    text-decoration: none;
+}
+
 .search-form__textfield:focus {
+    color: #fff;
     outline: none;
 }
 
@@ -219,7 +224,6 @@ fieldset {
     justify-content: space-between;
     align-items: start;
     width: 711px;
-    height: 54px;
     margin: 0 auto;
 }
 
@@ -252,16 +256,6 @@ fieldset {
 .search-form__checkbox-list {
     display: flex;
     gap: 15px;
-}
-
-.search-form__pseudo-checkbox:hover {
-    cursor: pointer;
-}
-
-.search-form__label:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 3px;
 }
 
 .search-form__label:focus {
@@ -299,6 +293,10 @@ input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox::before {
     width: 15px;
     height: 15px;
     background-color: #fff;
+}
+
+label:hover .search-form__label-text {
+    text-decoration: underline;
 }
 
 .button {
@@ -358,3 +356,4 @@ input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox::before {
     justify-content: center;
     align-items: center;
 }
+
